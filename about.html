@@ -28,17 +28,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
     <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse">
+    <div class="navbar navbar-inverse" style="position:fixed; z-index:9999; top: 0; left: 0; right: 0; width: 100%;">
         <div class="container">
-            <div class="navbar-header">
-                <!-- Button for smallest screens -->
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a class="navbar-brand" href="index.html">
-                    <h1>SYLVAN</h1></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav pull-right mainNav">
-                    <li class="dropdown active">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="index.html">
+					<h1>SYLVAN</h1></a> <!-- <img src="assets/images/logo.png" alt="Techro HTML5 template">-->
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right mainNav">
+					<!-- <li class="active"><a href="index.html">Home</a></li> -->
+					<li class="dropdown active">
 						<a href="index.html" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href=this.href; return false;">Home <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="index.html#indexourmission">Our Mission</a></li>
@@ -59,30 +60,51 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</ul>
 					</li>
                     <li class="dropdown">
-						<a href="products.html" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href=this.href; return false;">Products <b class="caret"></b></a>
-                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                            <li><a href="products.html#productslandremediation">Contaminated Land Real Estate And Advisory</a></li>
+                        <a href="esgandrenewable.html" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href=this.href; return false;">ESG And Renewable<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="esgandrenewable.html#renewables">Renewables</a></li>
                             <li class="divider"></li>
                             <li class="dropdown-submenu">
-                              <a tabindex="-1" href="products.html#productsrenewables" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href=this.href; return false;">Renewables</a>
+                              <a tabindex="-1" href="esgandrenewable.html#solar" class="dropdown-toggle" data-toggle="dropdown" onclick="location.href=this.href; return false;">Solar</a>
                               <ul class="dropdown-menu">
-                                <li><a tabindex="-1" href="products.html#productssolar">Why Invest in Solar?</a></li>
-                                <li><a href="products.html#productssolar">Solar Advisory Service</a></li>
+                                <li><a tabindex="-1" href="esgandrenewable.html#whyinvestinsolar">Why Invest in Solar?</a></li>
+                                <li><a href="esgandrenewable.html#solaradvisoryservice">Solar Advisory Service</a></li>
                               </ul>
                             </li>
                         </ul>
-					</li>
+                    
+                    </li>
+                    <li><a href=contaminatedland.html>Contaminated Land</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     
-                                
-                </ul>
+				</ul>
+                
+			</div>
+
+			<!--/.nav-collapse -->
+		</div>
+        <div class="container" style="height: 30px; border-top: 1px solid #ffffff; padding-top:5px;">
+            <div class="row">
+              <div class="column">
+                <a href="about.html" style="color:white;">About</a>
+                <span class="line" style="display: inline-block;width: 20px;height: 2px;background-color: green;margin-bottom:3px;margin-right:7px;margin-left:5px;"></span>
+                <a href="about.html#whoweare">Who We Are</a>
+                <span class="line" style="display: inline-block;width: 12px;height: 2px;background-color: white;margin-bottom:3px;margin-right:5px;margin-left:3px;"></span>
+                <a href="about.html#whatwedo">What We Do</a>
+                <span class="line" style="display: inline-block;width: 12px;height: 2px;background-color: white;margin-bottom:3px;margin-right:5px;margin-left:3px;"></span>
+                <a href="about.html#esginvesting">ESG Investing</a>
+                <span class="line" style="display: inline-block;width: 12px;height: 2px;background-color: white;margin-bottom:3px;margin-right:5px;margin-left:3px;"></span>
+                <a href="about.html#whatweoffer">What We Offer</a>
+                <span class="line" style="display: inline-block;width: 12px;height: 2px;background-color: white;margin-bottom:3px;margin-right:5px;margin-left:3px;"></span>
+                <a href="about.html#meetourteam">Meet Our Team</a>
+              </div>
             </div>
-            <!--/.nav-collapse -->
+
         </div>
     </div>
     <!-- /.navbar -->
 
-    <header id="head" class="secondary">
+    <header id="head" class="secondary" style="margin-top:99px;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8">
@@ -96,8 +118,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <section class="container">
         <div class="row">
             <!-- main content -->
-            <section class="col-sm-8 maincontent">
-                <section id="whoweare">
+            <section class="col-sm-12 maincontent">
+                <section id="whoweare" style="scroll-margin-top:120px;">
                 <h3>Who We Are</h3>
             
                     <img src="assets/images/about.jpg" alt="" class="img-rounded pull-right" width="300">
@@ -106,7 +128,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     solutions for investing in renewable energy projects across the United States. Sylvan’s strategy seeks to provide
                      downside protection, and attractive risk-adjusted returns, while delivering inherent environmental benefits. </p>
                 </section>
-                <section id="whatwedo">
+                <section id="whatwedo" style="scroll-margin-top:120px;">
 		        <h3>What We Do</h3>
                 <p>The investment team at Sylvan, brings its specialized knowledge and project finance expertise to address itself to a
                      wide range of opportunities in renewable energy, primarily ranging from smaller scale commercial and community 
@@ -115,8 +137,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                      including power generation, renewables and storage solutions, environmental infrastructure and sustainability, 
                      efficiency & reliability assets. </p>
                 </section>
-        <section id="esginvesting">
-        <img src="assets/images/cleanenergyinvestment.jpg" alt="clean energy investment image">
+        <section id="esginvesting" style="scroll-margin-top:100px;">
+        <div style=" height: 500px; overflow: hidden;">
+            <img src="assets/images/cleanenergyinvestment.jpg" alt="clean energy investment image">
+        </div>
 		    
 		<h3>ESG Investing</h3>
                 <p>We believe capital can work to benefit all of society. We’re passionate about innovation – in finance, technology, 
@@ -130,7 +154,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     areas and keep our clients fully informed about trends and opportunities as well as helping them fully 
                     understand the challenges faced.  </p>
         </section>
-        <section id="whatweoffer">
+        <section id="whatweoffer" style="padding-top:20px; scroll-margin-top:60px;">
         <img src="assets/images/consulting.webp" alt="consulting image" style="margin-top: 20px; margin-bottom: -20px;">
 
         <h3>What We Offer</h3>
@@ -154,7 +178,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </section>
             <!-- /main -->
 
-            <!-- Sidebar -->
+            <!-- Sidebar 
             <aside class="col-sm-4 sidebar sidebar-right">
 
                 <div class="panel">
@@ -174,7 +198,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 </div>
 
             </aside>
-            <!-- /Sidebar -->
+            /Sidebar --> 
 
         </div>
     </section>
@@ -183,7 +207,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <section id="meetourteam">
+                    <section id="meetourteam" style="scroll-margin-top:120px;">
                     <h3>Meet Our Team</h3>
                     <p>Investment Team’s Pictures and Profiles. </p>
                     <br />
@@ -292,7 +316,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <p class="simplenav">
 								<a href="index.html">Home</a> | 
 								<a href="about.html">About</a> |
-								<a href="products.html">Products</a> |
+								<a href="esgandrenewable.html">ESG And Renewable</a> |
+                                <a href="contaminatedland.html">Contaminated Land</a> |
 								<a href="contact.html">Contact</a>
 							</p>
                         </div>
