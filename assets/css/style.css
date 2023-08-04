@@ -354,6 +354,12 @@ img.pull-left {
     -o-transform: translateY(-150px);
 }
 
+.team-image {
+    width: 300px; 
+    height: 350px; 
+    object-fit: cover; 
+}
+
 .cuadro_intro_hover img {
     z-index: 4;
 }
